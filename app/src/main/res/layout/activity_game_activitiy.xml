@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bacgraundgame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/iphone"
+    android:orientation="vertical"
+    tools:context=".GameActivitiy">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/time"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/icons8_time_100px"
+            app:layout_constraintBottom_toTopOf="@id/image_1"
+            app:layout_constraintLeft_toLeftOf="@id/image_1"
+            app:layout_constraintRight_toRightOf="@id/image_1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/time_text"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:text="1:59"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/img_3"
+            app:layout_constraintLeft_toRightOf="@id/time"
+            app:layout_constraintRight_toRightOf="@id/img_3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/image_1"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:src="@drawable/gamefon"
+            app:layout_constraintBottom_toTopOf="@id/img_4"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/img_2"
+            app:layout_constraintTop_toBottomOf="@id/time" />
+
+
+        <ImageView
+            android:id="@+id/img_2"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:src="@drawable/gamefon"
+            app:layout_constraintBottom_toTopOf="@id/img_5"
+            app:layout_constraintLeft_toRightOf="@id/image_1"
+            app:layout_constraintRight_toLeftOf="@id/img_3"
+            app:layout_constraintTop_toBottomOf="@id/time_text" />
+
+
+        <ImageView
+            android:id="@+id/img_3"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:src="@drawable/gamefon"
+            app:layout_constraintBottom_toTopOf="@id/img_6"
+            app:layout_constraintLeft_toRightOf="@id/img_2"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/time_text" />
+
+
+        <ImageView
+            android:id="@+id/img_4"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:src="@drawable/gamefon"
+            app:layout_constraintBottom_toTopOf="@id/img_7"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/img_5"
+            app:layout_constraintTop_toBottomOf="@id/image_1" />
+
+        <ImageView
+            android:id="@+id/img_5"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:src="@drawable/gamefon"
+            app:layout_constraintBottom_toTopOf="@id/img_8"
+            app:layout_constraintLeft_toRightOf="@id/img_4"
+            app:layout_constraintRight_toLeftOf="@id/img_6"
+            app:layout_constraintTop_toBottomOf="@id/img_2" />
+
+        <ImageView
+            android:id="@+id/img_6"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:src="@drawable/gamefon"
+            app:layout_constraintBottom_toTopOf="@id/img_9"
+            app:layout_constraintLeft_toRightOf="@id/img_5"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/img_3" />
+
+        <ImageView
+            android:id="@+id/img_7"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:src="@drawable/gamefon"
+            app:layout_constraintBottom_toTopOf="@id/img_10"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/img_8"
+            app:layout_constraintTop_toBottomOf="@id/img_4" />
+
+        <ImageView
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:id="@+id/img_8"
+            android:src="@drawable/gamefon"
+            app:layout_constraintLeft_toRightOf="@id/img_7"
+            app:layout_constraintTop_toBottomOf="@id/img_5"
+            app:layout_constraintRight_toLeftOf="@id/img_9"
+            app:layout_constraintBottom_toTopOf="@id/img_11"/>
+
+        <ImageView
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:id="@+id/img_9"
+            android:src="@drawable/gamefon"
+            app:layout_constraintLeft_toRightOf="@id/img_8"
+            app:layout_constraintTop_toBottomOf="@id/img_6"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/img_12" />
+
+        <ImageView
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:id="@+id/img_10"
+            android:src="@drawable/gamefon"
+          app:layout_constraintTop_toBottomOf="@id/img_7"
+            app:layout_constraintRight_toLeftOf="@id/img_11"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <ImageView
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:id="@+id/img_11"
+            android:src="@drawable/gamefon"
+            app:layout_constraintRight_toLeftOf="@id/img_12"
+            app:layout_constraintTop_toBottomOf="@id/img_8"
+            app:layout_constraintLeft_toRightOf="@id/img_10"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+        <ImageView
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:id="@+id/img_12"
+            android:src="@drawable/gamefon"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/img_11"
+            app:layout_constraintTop_toBottomOf="@id/img_9"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/restart"
+            android:textColor="@color/white"
+            android:text="Restart Game"
+            android:visibility="gone"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>
